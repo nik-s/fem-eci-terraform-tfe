@@ -21,3 +21,8 @@ module "workspace" {
   organization_name = var.organization_name
   project_id        = each.value.project_id
 }
+
+moved {
+  from = module.workspace["fem-eci-workspace"]
+  to   = module.workspace["fem-eci-tfe"]
+}
