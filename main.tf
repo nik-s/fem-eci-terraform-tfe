@@ -26,8 +26,3 @@ module "workspace" {
     identifier                 = each.value.vcs_repo_identifier
   }
 }
-
-moved {
-  from = module.workspace["fem-eci-workspace"]
-  to   = module.workspace["fem-eci-tfe"]
-}
